@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import styles from './Slideshow.module.css';
 
 const images = [
-  './images/port_1.jpg',
-  './images/port_2.jpg',
-  './images/port_3.jpg',
+  '/images/port_1.jpg',
+  '/images/port_2.jpg',
+  '/images/port_3.jpg',
 ];
 
 const Slideshow = () => {
@@ -17,13 +18,13 @@ const Slideshow = () => {
   }, [currentIndex]);
 
   return (
-    <div className="slideshow">
+    <div className={styles.slideshow}>
       {images.map((src, index) => (
         <img
           key={index}
           src={src}
           alt={`Slide ${index + 1}`}
-          className={index === currentIndex ? 'active' : ''}
+          className={index === currentIndex ? styles.active : ''}
         />
       ))}
     </div>
