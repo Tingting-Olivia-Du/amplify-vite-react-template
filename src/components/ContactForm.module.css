@@ -1,0 +1,44 @@
+.contactSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background: #f8f8f8;
+  margin: 0 auto;
+}
+
+.contactInfo {
+  width: 45%;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.contactForm {
+  width: 45%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contactForm button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
