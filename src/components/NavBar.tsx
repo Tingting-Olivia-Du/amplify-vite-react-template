@@ -1,16 +1,14 @@
-
+import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <nav>
-      <div className="container">
-        <div className="logo">Yxboxx International limited</div>
-        <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="tel:+1234567890">Call: +1 (234) 567-890</a></li>
-        </ul>
+    <nav className={styles.nav}>
+      <div className={styles.logo}>Yxboxx International limited</div>
+      <div className={styles.buttonContainer}>
+        <a href="#about" className={styles.navButton}>About Us</a>
+        <a href="#products" className={styles.navButton}>Products</a>
+        <a href="#contact" className={styles.navButton}>Contact</a>
+        <a href="tel:+1234567890" className={styles.navButton}>Call: +1 (234) 567-890</a>
       </div>
     </nav>
   );

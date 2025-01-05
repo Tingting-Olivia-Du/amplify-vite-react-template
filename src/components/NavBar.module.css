@@ -1,18 +1,16 @@
 .nav {
-  background: white;
-  color: #333;
+  background: white; /* 导航栏背景 */
+  color: #333; /* 文本颜色 */
   padding: 10px 20px;
   position: fixed;
   top: 0;
-  width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  left: 0;
+  width: 100%; /* 导航栏宽度 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  z-index: 100; /* 顶层显示 */
+  display: flex; /* Flex 布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: space-between; /* 左右分布 */
 }
 
 .logo {
@@ -20,22 +18,24 @@
   font-weight: bold;
 }
 
-.navList {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.buttonContainer {
+  display: flex; /* 横向排列按钮 */
+  gap: 15px; /* 按钮之间的间距 */
 }
 
-.navList li {
-  display: inline;
+.navButton {
+  text-decoration: none; /* 去掉下划线 */
+  color: #333; /* 按钮文字颜色 */
+  font-size: 16px; /* 字体大小 */
+  padding: 10px 15px; /* 按钮内边距 */
+  border-radius: 5px; /* 按钮圆角 */
+  background: #f4f4f4; /* 按钮背景色 */
+  border: 1px solid #ddd; /* 按钮边框 */
+  transition: all 0.3s ease; /* 交互效果 */
 }
 
-.navList li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-}
-
-.navList li a:hover {
-  color: #007BFF;
+.navButton:hover {
+  background: #007BFF; /* 悬停背景色 */
+  color: white; /* 悬停文字颜色 */
+  border-color: #007BFF; /* 悬停边框颜色 */
 }

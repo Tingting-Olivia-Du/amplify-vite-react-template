@@ -1,44 +1,75 @@
-.contactSection {
+.contactContainer {
   display: flex;
-  flex-wrap: wrap;
-  padding: 50px 20px;
-  background: #f8f8f8;
+  justify-content: space-between;
+  padding: 20px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .contactInfo {
-  width: 45%;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.contactForm {
-  width: 45%;
-  background: white;
+  flex: 1;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contactForm form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.contactInfo h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
-.contactForm input,
-.contactForm textarea {
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.contactInfo p {
+  margin: 8px 0;
   font-size: 16px;
 }
 
-.contactForm button {
-  padding: 10px 20px;
-  background: #007BFF;
-  color: white;
+.contactForm {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.contactForm p {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
 }

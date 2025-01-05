@@ -1,9 +1,9 @@
-import styles from "./Products.module.css"; // 引入CSS模块
+import styles from "./Products.module.css";
 
 // 产品数据数组
 const products = [
   {
-    img: "/images/20_standard.png",
+    img: "/images/20_standard.png", // 图片地址: public/images/20_standard.png
     title: "20' Standard",
     details: [
       { label: "Inner Length", value: "5.89m" },
@@ -13,7 +13,7 @@ const products = [
     ],
   },
   {
-    img: "/images/20_open_side.png",
+    img: "/images/20_open_side.png", // 图片地址: public/images/20_open_side.png
     title: "20' Open Side",
     details: [
       { label: "Inner Length", value: "5.89m" },
@@ -23,7 +23,7 @@ const products = [
     ],
   },
   {
-    img: "/images/40_high_cube.png",
+    img: "/images/40_high_cube.png", // 图片地址: public/images/40_high_cube.png
     title: "40' High Cube",
     details: [
       { label: "Inner Length", value: "12.03m" },
@@ -33,7 +33,7 @@ const products = [
     ],
   },
   {
-    img: "/images/40_high_cube_double_door.png",
+    img: "/images/40_high_cube_double_door.png", // 图片地址: public/images/40_high_cube_double_door.png
     title: "40' High Cube Double Door",
     details: [
       { label: "Inner Length", value: "11.97m" },
@@ -43,7 +43,7 @@ const products = [
     ],
   },
   {
-    img: "/images/40_high_cube_open_side_4_doors.png",
+    img: "/images/40_high_cube_open_side_4_doors.png", // 图片地址: public/images/40_high_cube_open_side_4_doors.png
     title: "40' High Cube Open Side 4 Doors",
     details: [
       { label: "Inner Length", value: "12.03m" },
@@ -53,7 +53,7 @@ const products = [
     ],
   },
   {
-    img: "/images/40_high_cube_full_open_side.png",
+    img: "/images/40_high_cube_full_open_side.png", // 图片地址: public/images/40_high_cube_full_open_side.png
     title: "40' High Cube Full Open Side",
     details: [
       { label: "Inner Length", value: "12.03m" },
@@ -64,23 +64,30 @@ const products = [
   },
 ];
 
+// 产品组件
 const Products = () => {
   return (
     <div id="products" className={styles.productsSection}>
       <h2>Our Products</h2>
-      {products.map((product, index) => (
-        <div key={index} className={styles.product}>
-          <img src={product.img} alt={product.title} className={styles.productImage} />
-          <div className={styles.productDetails}>
-            <h3>{product.title}</h3>
-            {product.details.map((detail, i) => (
-              <p key={i}>
-                <strong>{detail.label}:</strong> {detail.value}
-              </p>
-            ))}
+      <div className={styles.productsGrid}>
+        {products.map((product, index) => (
+          <div key={index} className={styles.productCard}>
+            <img
+              src={product.img}
+              alt={product.title}
+              className={styles.productImage}
+            />
+            <div className={styles.productDetails}>
+              <h3>{product.title}</h3>
+              {product.details.map((detail, i) => (
+                <p key={i}>
+                  <strong>{detail.label}:</strong> {detail.value}
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
