@@ -1,87 +1,51 @@
-/* 整个产品区域的容器 */
 .productsSection {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 居中所有内容 */
+  padding: 50px 20px;
+  background: #f8f8f8; /* 浅灰背景 */
+  text-align: center;
 }
 
 .productsSection h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 30px;
   color: #333;
 }
 
-/* 产品列表，纵向排列 */
 .productsGrid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap; /* 自动换行 */
+  justify-content: center; /* 居中对齐 */
   gap: 20px; /* 每个产品之间的间距 */
-  width: 100%; /* 保证内容宽度为父容器宽度 */
-  align-items: center; /* 居中所有卡片 */
 }
 
-/* 单个产品卡片 */
 .productCard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* 固定宽度 */
   padding: 20px;
-  gap: 20px; /* 图片与详情之间的间距 */
-  width: 80%; /* 调整卡片的宽度，减少宽度 */
-  max-width: 900px; /* 设置最大宽度，防止卡片过大 */
+  text-align: left; /* 左对齐文字 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 产品图片 */
+.productCard:hover {
+  transform: scale(1.05); /* 放大效果 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 增强阴影 */
+}
+
 .productImage {
-  width: 500px; /* 调整图片宽度 */
-  height: auto; /* 高度根据宽度自动调整 */
+  width: 100%; /* 图片宽度占满卡片 */
   border-radius: 8px;
-  object-fit: cover; /* 保持图片比例 */
+  margin-bottom: 15px;
 }
 
-/* 产品详情区域 */
-.productDetails {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* 每个详情段落之间的间距 */
-}
-
-/* 产品标题 */
 .productDetails h3 {
-  margin: 0;
   font-size: 24px;
+  margin-bottom: 10px;
   color: #333;
 }
 
-/* 产品详情的文字 */
 .productDetails p {
-  margin: 0;
   font-size: 16px;
   color: #555;
-}
-
-/* 响应式设计 - 小屏幕 */
-@media (max-width: 768px) {
-  .productCard {
-    flex-direction: column; /* 小屏幕时图片和详情改为上下布局 */
-    text-align: center; /* 居中对齐 */
-    width: 90%; /* 小屏幕时卡片宽度更宽一些 */
-  }
-
-  .productImage {
-    width: 100%; /* 图片宽度占满父容器 */
-    height: auto; /* 高度自动调整 */
-  }
-
-  .productDetails {
-    align-items: center; /* 居中对齐内容 */
-  }
+  margin-bottom: 5px;
 }
