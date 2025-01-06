@@ -59,6 +59,8 @@ const ContactForm = () => {
         <p><strong>Services:</strong> International freight, container customization, supply chain logistics.</p>
       </div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
+        <h2>Contact Us</h2> 
+        <p>Please fill out the form below, and we will get back to you as soon as possible. Thank you!</p>
         <input
           type="text"
           name="name"
