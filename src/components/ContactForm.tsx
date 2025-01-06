@@ -23,7 +23,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "d-n50cs0qnj7.execute-api.us-east-1.amazonaws.com", // 替换为你的 API Gateway URL
+        "https://3b220drlqi.execute-api.us-east-1.amazonaws.com/prod/send-email", // 替换为你的 API Gateway URL
         {
           method: "POST",
           headers: {
