@@ -56,6 +56,7 @@ const ContactForm = () => {
         <h2>Contact Information</h2>
         <p><strong>Address:</strong> 123 Main Street, Ningbo, China</p>
         <p><strong>Phone:</strong> +1 (234) 567-890</p>
+        <p><strong>Email:</strong> yxjane@yongxiang-nb.com</p>
         <p><strong>Services:</strong> International freight, container customization, supply chain logistics.</p>
       </div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
