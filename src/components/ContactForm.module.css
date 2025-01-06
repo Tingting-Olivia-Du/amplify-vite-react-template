@@ -4,6 +4,7 @@
   padding: 20px;
   margin: 0 auto;
   max-width: 1200px;
+  gap: 20px;
 }
 
 .contactInfo {
@@ -32,20 +33,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contactForm h2 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.contactForm p {
-  margin-bottom: 16px;
-  font-size: 14px;
-  color: #666;
-}
-
-.input,
-.select,
-.textarea {
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
@@ -54,7 +44,7 @@
   font-size: 14px;
 }
 
-.textarea {
+.contactForm textarea {
   height: 100px;
   resize: none;
 }

@@ -23,7 +23,7 @@ const ContactForm = () => {
 
     try {
       const response = await fetch(
-        "https://<api-id>.execute-api.us-east-1.amazonaws.com/prod/send-email", // 替换为你的 API Gateway URL
+        "d-n50cs0qnj7.execute-api.us-east-1.amazonaws.com", // 替换为你的 API Gateway URL
         {
           method: "POST",
           headers: {
@@ -52,6 +52,12 @@ const ContactForm = () => {
 
   return (
     <div id="contact" className={styles.contactContainer}>
+      <div className={styles.contactInfo}>
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 Main Street, Ningbo, China</p>
+        <p><strong>Phone:</strong> +1 (234) 567-890</p>
+        <p><strong>Services:</strong> International freight, container customization, supply chain logistics.</p>
+      </div>
       <form className={styles.contactForm} onSubmit={handleSubmit}>
         <input
           type="text"
@@ -90,7 +96,7 @@ const ContactForm = () => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className={styles.submitButton}>Submit</button>
         {status && <p>{status}</p>}
       </form>
     </div>
