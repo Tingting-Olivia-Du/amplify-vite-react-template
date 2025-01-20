@@ -54,8 +54,9 @@ const ContactForm = () => {
     <div id="contact" className={styles.contactContainer}>
       <div className={styles.contactInfo}>
         <h2>Contact Information</h2>
-        <p><strong>Address:</strong> 123 Main Street, Ningbo, China</p>
-        <p><strong>Phone:</strong> +1 (234) 567-890</p>
+        <p><strong>HK Address:</strong> 10/F, Easey Commercial Building, Wan Chai, Hong Kong</p>
+        <p><strong>CN Address:</strong> No.510 Heyuan Rd, Ningbo City, China</p>
+        <p><strong>Sales:</strong> +86 130 0372 8785 / +86 132 4858 0339</p>
         <p><strong>Email:</strong> yxjane@yongxiang-nb.com</p>
         <p><strong>Services:</strong> International freight, container customization, supply chain logistics.</p>
       </div>

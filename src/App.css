@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: 1280px; /* 保持最大宽度 */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem; /* 修改为左右1rem以适应手机端 */
   text-align: center;
 }
 
@@ -27,9 +27,11 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+/* 为小屏幕优化 */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem; /* 减少小屏幕的边距 */
   }
 }
 

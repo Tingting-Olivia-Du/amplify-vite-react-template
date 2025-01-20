@@ -77,3 +77,38 @@
 .submitButton:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column; /* 垂直排列 */
+    gap: 20px;
+  }
+
+  .contactInfo,
+  .contactForm {
+    width: 100%; /* 占满整个屏幕宽度 */
+    padding: 15px; /* 减少内边距 */
+  }
+
+  .contactInfo h2,
+  .contactForm h2 {
+    font-size: 20px; /* 调整标题字体大小 */
+  }
+
+  .contactInfo p,
+  .contactForm p {
+    font-size: 14px; /* 调整描述文本字体大小 */
+  }
+
+  .contactForm input,
+  .contactForm select,
+  .contactForm textarea {
+    font-size: 14px; /* 输入框字体大小 */
+    padding: 8px; /* 减少内边距 */
+  }
+
+  .submitButton {
+    font-size: 14px; /* 调整按钮字体大小 */
+    padding: 8px; /* 减少按钮内边距 */
+  }
+}

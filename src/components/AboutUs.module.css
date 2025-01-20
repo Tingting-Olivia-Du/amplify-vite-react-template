@@ -30,3 +30,27 @@
   line-height: 1.5; /* 行高 */
   margin-bottom: 3px; /* 减小段落间距 */
 }
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column; /* 改为纵向排列 */
+    padding: 10px 20px; /* 减少边距 */
+  }
+
+  .about-us img {
+    width: 100%; /* 图片占满宽度 */
+    margin-bottom: 15px; /* 图片和文字之间增加间距 */
+  }
+
+  .about-us .content {
+    width: 100%; /* 文字部分占满宽度 */
+    padding-left: 0; /* 移除左侧内边距 */
+  }
+
+  .about-us h2 {
+    font-size: 28px; /* 调整标题字体大小 */
+  }
+
+  .about-us p {
+    font-size: 16px; /* 调整正文字体大小 */
+  }
+}

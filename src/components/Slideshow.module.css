@@ -20,3 +20,25 @@
 .slideshow img.active {
   opacity: 1;
 }
+
+/* === 手机端适配 (最大宽度768px) === */
+@media (max-width: 768px) {
+  .slideshow {
+    height: 300px; /* 缩小高度以适应手机屏幕 */
+  }
+
+  .slideshow img {
+    height: 300px; /* 确保图片与容器一致 */
+  }
+}
+
+/* === 超小屏幕适配 (最大宽度480px) === */
+@media (max-width: 480px) {
+  .slideshow {
+    height: 200px; /* 进一步减少高度 */
+  }
+
+  .slideshow img {
+    height: 200px; /* 图片高度同步调整 */
+  }
+}

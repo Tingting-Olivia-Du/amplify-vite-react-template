@@ -1,0 +1,56 @@
+.mapSection {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .mapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mapImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .mapSection {
+      padding: 10px; /* 减少内边距以适应小屏幕 */
+    }
+  
+    .title {
+      font-size: 20px; /* 缩小标题字体大小 */
+    }
+  
+    .subtitle {
+      font-size: 14px; /* 缩小副标题字体大小 */
+      margin-bottom: 15px; /* 减少副标题和地图之间的间距 */
+    }
+  
+    .mapContainer {
+      flex-direction: column; /* 垂直方向排列内容 (如有多个元素) */
+    }
+  
+    .mapImage {
+      max-width: 100%; /* 确保地图图片占满可用宽度 */
+      height: auto; /* 保持图片比例 */
+      border-radius: 6px; /* 减小圆角 */
+    }
+  }
