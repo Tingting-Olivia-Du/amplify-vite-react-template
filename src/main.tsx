@@ -6,12 +6,11 @@ import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 import '@aws-amplify/ui-react/styles.css';
 
+// 配置 Amplify（本地开发时使用空配置）
 Amplify.configure(outputs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-    
   <React.StrictMode>
-         <App />
-     </React.StrictMode>
-  
+    <App />
+  </React.StrictMode>
 );
