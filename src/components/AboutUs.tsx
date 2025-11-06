@@ -8,7 +8,7 @@ const AboutUs = () => {
         <h2>About Us</h2>
         <p>
           Yxboxx international limited  was established on March 20, 2013, 
-          with its headquarters located on Ningbo, Zhejiang Province.
+          with its headquarters located in Ningbo, Zhejiang Province, China.
         </p>
         <p>
           Yxboxx international limited specializes in international freight forwarding, offering services in sea, air, 
