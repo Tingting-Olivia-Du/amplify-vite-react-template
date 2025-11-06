@@ -8,7 +8,7 @@ const AboutUs = () => {
         <h2>About Us</h2>
         <p>
           Yxboxx international limited  was established on March 20, 2013, 
-          with its headquarters located on Zhi Xing Road, Fuming Street, Yinzhou District, Ningbo, Zhejiang Province.
+          with its headquarters located on Ningbo, Zhejiang Province.
         </p>
         <p>
           Yxboxx international limited specializes in international freight forwarding, offering services in sea, air, 

@@ -2,20 +2,20 @@
   display: flex; /* 水平排列 */
   flex-direction: row; /* 确保图片和文字左右对齐 */
   align-items: center; /* 垂直居中 */
-  justify-content: space-between; /* 内容两端对齐 */
-  padding: 20px 60px;
-  gap: 0px; /* 减小图片和文字之间的间距 */
+  justify-content: flex-start; /* 内容两端对齐 */
+  padding: 50px 40px;
+  gap: 10px; /* 减小图片和文字之间的间距 */
 }
 
 .about-us img {
-  width: 48%; /* 图片占 45% 的宽度 */
+  width: 55%; /* 图片占 45% 的宽度 */
   max-width: 600px; /* 限制图片最大宽度 */
   border-radius: 10px; /* 图片圆角 */
   object-fit: cover; /* 图片填充模式，保持比例 */
 }
 
 .about-us .content {
-  width: 50%; /* 文字部分占 50% 的宽度 */
+  width: 45%; /* 文字部分占 50% 的宽度 */
   max-width: 600px; /* 限制文字区域最大宽度 */
   padding-left: 5px; /* 增加文字部分的左侧内边距，使其靠近图片 */
 }
